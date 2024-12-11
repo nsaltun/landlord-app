@@ -4,3 +4,4 @@ This is a frontend app for calculating building area for a land by providing it'
 # How to Run
 - To run this first [landlord-api](https://www.github.com/nsaltun/landlord-api) should be up.
 - Then run landlord-app by running command `npm run start`
+- api url is `http://localhost:8080` as default. To change it need to use env var with `REACT_APP_USER_API_BASE_URL`
