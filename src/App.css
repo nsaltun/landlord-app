@@ -1,0 +1,52 @@
+.app-layout {
+    min-height: 100vh;
+}
+
+.app-header {
+    background-color: #70a9de;
+    padding: 16px;
+    text-align: center;
+}
+
+.header-title {
+    margin: 0;
+}
+
+.app-content {
+    padding: 24px;
+    min-height: calc(100vh - 64px);  
+}
+
+.form-row {
+    min-height: 80vh;
+}
+
+.calculation-form {
+    max-width: 100%;
+}
+
+.api-response {
+    margin-top: 24px;
+}
+
+
+.main-row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-col {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.response-col {
+    margin-left: 32px; /* Adds space between the form and response panel */
+    padding: 24px;
+    border-radius: 8px;
+    background: #fafafa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
