@@ -1,7 +1,10 @@
+import config from "./config";
+
 // api.js
 export const calculateData = async (formData) => {
     try {
-      const response = await fetch('http://localhost:8080/land/calculate', {
+      const url=config.apiBaseUrl+"/land/calculate"
+      const response = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

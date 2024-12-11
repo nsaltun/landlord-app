@@ -8,7 +8,6 @@ import {
   Typography,
   Row,
   Col,
-  Spin,
   Alert,
   Divider,
   Table,
@@ -176,7 +175,16 @@ const App = () => {
                 pagination={false}
               />
               <Divider />
-              <Text strong>2+1 Daire Özellikleri:</Text> {apiResponse.TwoPlusOneCount}
+              <Title level={4}>2+1 Daire Özellikleri</Title>
+              <Table
+                columns={onePlusOneColumns}
+                dataSource={apiResponse.TwoPlusOneCount.map((item, index) => ({
+                  key: index,
+                  ...item,
+                }))}
+                pagination={false}
+              />
+              <Divider />
               <br />
               <Text strong>3+1 Daire Özellikleri:</Text> {apiResponse.ThreePlusOneCount}
             </Col>
